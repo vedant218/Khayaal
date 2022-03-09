@@ -12,6 +12,11 @@
         <entry key="..\:/Users/Ananya Garg/Desktop/hackathonsplashscreen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.176" />
         <entry key="..\:/Users/Ananya Garg/Desktop/hackathonsplashscreen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.176" />
         <entry key="..\:/Users/Ananya Garg/Desktop/hackathonsplashscreen/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/khayaal-TSECHACKS2022/app/src/main/res/layout/activity_cal.xml" value="0.25416666666666665" />
+        <entry key="..\:/khayaal-TSECHACKS2022/app/src/main/res/layout/activity_event_edit.xml" value="0.25416666666666665" />
+        <entry key="..\:/khayaal-TSECHACKS2022/app/src/main/res/layout/activity_week_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/khayaal-TSECHACKS2022/app/src/main/res/layout/calendar_cell.xml" value="0.25416666666666665" />
+        <entry key="..\:/khayaal-TSECHACKS2022/app/src/main/res/layout/event_cell.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

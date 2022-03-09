@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonSplashScreen">
         <activity
+            android:name=".WeekViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalActivity"
+            android:exported="true" />
+        <activity
             android:name=".home"
             android:exported="false" />
         <activity
