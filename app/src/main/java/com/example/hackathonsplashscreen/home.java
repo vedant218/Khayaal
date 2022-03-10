@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,8 +33,10 @@ public class home extends AppCompatActivity {
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent patientIntent = new Intent(getApplicationContext(), patient.class);
-                startActivity(patientIntent);
+                Uri uri = Uri.parse("https://www.kommunicate.io/livechat-demo?appId=2a62c120f98dd885f0789d7a188b51b3f&botIds=pari-fkb49&assignee=pari-fkb49");
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
 
         });
