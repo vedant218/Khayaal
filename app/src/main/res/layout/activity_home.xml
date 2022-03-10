@@ -23,6 +23,35 @@
         android:background="@color/white"
         android:backgroundTint="@color/teal"
         />
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="362dp"-->
+<!--        android:layout_height="422dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:lottie_autoPlay="true"-->
+<!--        app:lottie_loop="true"-->
+<!--        app:lottie_rawRes="@raw/familyuser" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="224dp"-->
+<!--        android:layout_height="244dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:background="@drawable/demen"-->
+<!--        android:layout_centerInParent="true"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/texty"-->
+<!--        android:layout_width="173dp"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_alignBottom="@+id/imageView4"-->
+<!--        android:layout_centerHorizontal="true"-->
+
+<!--        android:layout_marginBottom="-64dp"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:text="Vedant Deshmukh"-->
+<!--        android:textColor="@color/black" />-->
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bot"
         android:layout_width="28dp"

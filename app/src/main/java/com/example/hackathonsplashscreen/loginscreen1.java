@@ -22,5 +22,13 @@ public class loginscreen1 extends AppCompatActivity {
             }
 
         });
+        Button family = findViewById(R.id.family);
+        family.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent familyIntent = new Intent(getApplicationContext(), family.class);
+                startActivity(familyIntent);
+            }
+
+        });
     }
 }

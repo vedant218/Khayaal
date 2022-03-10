@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".CalActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:backgroundTint="@color/teal">
 
     <Button
         android:layout_width="wrap_content"
