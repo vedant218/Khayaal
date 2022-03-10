@@ -3,6 +3,7 @@ package com.example.hackathonsplashscreen;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -31,7 +32,8 @@ public class home extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
                         return true;
                     case R.id.Caretaker:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,careFragment).commit();
+                        Intent intent = new Intent(getApplicationContext(), CalActivity.class);
+                        startActivity(intent);
                         return true;
                     case R.id.timeline:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container,timeFragment).commit();
