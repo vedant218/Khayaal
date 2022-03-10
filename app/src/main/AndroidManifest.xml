@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HackathonSplashScreen">
         <activity
+            android:name=".Audio"
+            android:exported="true" />
+        <activity
+            android:name=".Media"
+            android:exported="false" />
+        <activity
             android:name=".WeekViewActivity"
             android:exported="true" />
         <activity
