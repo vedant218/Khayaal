@@ -92,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input"
-                    android:backgroundTint="@color/grey"
+                    android:backgroundTint="#D1D3D2"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black" />
 
@@ -117,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/input"
-                    android:backgroundTint="@color/grey"
+                    android:backgroundTint="#D1D3D2"
                     android:inputType="textPassword"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black" />

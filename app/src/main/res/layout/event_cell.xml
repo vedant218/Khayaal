@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/eventCellTV"
-        android:layout_width="94dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
         android:gravity="center"

@@ -2,7 +2,10 @@ package com.example.hackathonsplashscreen;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,6 +20,8 @@ public class home extends AppCompatActivity {
 
     Button button1;
     Button button2;
+    private static final String NOTIFICATION_CHANNEL_ID = "10001";
+    String default_notification_channel_id = "Default";
 
     BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
@@ -33,7 +38,7 @@ public class home extends AppCompatActivity {
 
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.kommunicate.io/livechat-demo?appId=2a62c120f98dd885f0789d7a188b51b3f&botIds=pari-fkb49&assignee=pari-fkb49");
+                Uri uri = Uri.parse("https://www.kommunicate.io/liv     echat-demo?appId=2a62c120f98dd885f0789d7a188b51b3f&botIds=pari-fkb49&assignee=pari-fkb49");
 
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
@@ -69,5 +74,24 @@ public class home extends AppCompatActivity {
                 return false;
             }
         });
+        createNotification();
+    }
+    private void createNotification () {
+        NotificationManager mNotificationManager = (NotificationManager)getSystemService( NOTIFICATION_SERVICE ) ;
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplicationContext() , default_notification_channel_id ) ;
+        mBuilder.setContentTitle( "Video Call Reminder!!!" ) ;
+        mBuilder.setContentText( "Hi there! Please call your family whenever possible!" ) ;
+        mBuilder.setTicker( "Notification Listener Service Example" ) ;
+        mBuilder.setSmallIcon(R.drawable. ic_launcher_foreground ) ;
+        mBuilder.setAutoCancel( true ) ;
+        if (android.os.Build.VERSION. SDK_INT >= android.os.Build.VERSION_CODES. O ) {
+            int importance = NotificationManager. IMPORTANCE_HIGH ;
+            NotificationChannel notificationChannel = new NotificationChannel( NOTIFICATION_CHANNEL_ID , "NOTIFICATION_CHANNEL_NAME" , importance) ;
+            mBuilder.setChannelId( NOTIFICATION_CHANNEL_ID ) ;
+            assert mNotificationManager != null;
+            mNotificationManager.createNotificationChannel(notificationChannel) ;
+        }
+        assert mNotificationManager != null;
+        mNotificationManager.notify(( int ) System. currentTimeMillis () , mBuilder.build()) ;
     }
 }

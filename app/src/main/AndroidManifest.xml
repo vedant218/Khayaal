@@ -31,16 +31,21 @@
         <activity
             android:name=".loginscreen1"
             android:exported="false" />
-        <activity android:name=".family"
-            android:exported="true"/>
-        <activity android:name=".homefamily"
-            android:exported="true"/>
-        <activity android:name=".media"
-            android:exported="true"/>
-        <activity android:name=".report"
-            android:exported="true"/>
-        <activity android:name=".vc"
-            android:exported="true"/>
+        <activity
+            android:name=".family"
+            android:exported="true" />
+        <activity
+            android:name=".homefamily"
+            android:exported="true" />
+        <activity
+            android:name=".media"
+            android:exported="true" />
+        <activity
+            android:name=".report"
+            android:exported="true" />
+        <activity
+            android:name=".vc"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

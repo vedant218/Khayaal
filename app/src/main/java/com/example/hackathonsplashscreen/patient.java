@@ -21,13 +21,6 @@ public class patient extends AppCompatActivity {
                 Intent homeIntent = new Intent(getApplicationContext(), home.class);
                 startActivity(homeIntent);
 
-                Button arrow = findViewById(R.id.arrow);
-                arrow.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        Intent loginscreen1Intent = new Intent(getApplicationContext(), loginscreen1.class);
-                        startActivity(loginscreen1Intent);
-                    }
-                });
             }
         });
     }

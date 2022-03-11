@@ -25,7 +25,9 @@
         android:layout_gravity="center"
         android:textSize="20sp"
         android:ems="10"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textColor="@color/black"
+        />
 
     <TextView
         android:id="@+id/eventDateTV"

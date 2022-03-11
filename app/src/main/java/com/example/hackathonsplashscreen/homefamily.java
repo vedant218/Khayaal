@@ -1,6 +1,7 @@
 package com.example.hackathonsplashscreen;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,12 +27,13 @@ public class homefamily extends AppCompatActivity {
         Button vc = findViewById(R.id.vc);
         vc.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent vcIntent = new Intent(getApplicationContext(), vc.class);
-                startActivity(vcIntent);
+                Uri uri = Uri.parse("https://meet.jit.si/rjjht");
 
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
             }
-        });
 
+        });
         Button report= findViewById(R.id.report);
         report.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
