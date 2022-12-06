@@ -9,4 +9,4 @@ various new features.
 ● Features: Live Location Tracker, Video Calling and Reminders, Uploading Pictures and Videos,
 Personalized Games, Medicine/Meal Tracker, AI Driven Chatbot, Speech Therapy and Status Report.  
 
-● Technologies used: Java, XML, Android Studio, Firebase, Jitsi Meet, Dialogflow, Kommunicate
+● Technologies used: Java, XML, Android Studio, Jitsi Meet, Dialogflow, Kommunicate
