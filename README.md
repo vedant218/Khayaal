@@ -10,3 +10,5 @@ various new features.
 Personalized Games, Medicine/Meal Tracker, AI Driven Chatbot, Speech Therapy and Status Report.  
 
 ● Technologies used: Java, XML, Android Studio, Jitsi Meet, Dialogflow, Kommunicate
+
+[khayaal.pdf](https://github.com/vedant218/Khayaal/files/13974607/khayaal.1.pdf)
